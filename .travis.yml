@@ -18,6 +18,8 @@ install:
 script:
   # run build script specified in package.json
   - npm run ci
+    name: "CI build"
   - npm run accessibility
+    name: "Accessibility checks"
   # call script for deploying of produced artifacts
   - bash ./.travis-deploy.sh
